@@ -7,14 +7,12 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 def f():
     i = 20
-    divisible = True
-    while divisible:
-        print(i)
+    while True:
         for j in range(2,21):
             if i % j != 0:
-                i += 1
+                i += 20
                 break
-            elif j == 20:
+            if j == 20:
                 return i
 
 print(f())
