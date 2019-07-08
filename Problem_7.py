@@ -14,7 +14,7 @@ def sieveOfEras(num):
             count = count + 1
             if count == 10001:
                 return i
-            for j in range(i*i,num-1,i):
+            for j in range(i,num-1,i):
                 multiples.append(j)
 
 print(sieveOfEras(100000))
